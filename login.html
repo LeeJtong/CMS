@@ -25,7 +25,7 @@
         <img src="./assets/images/slogan.png" alt="">
       </div>
       <div class="form-box">
-        <div class="register box">
+        <div class="register box" style="display:none">
           <div class="container row header mb-4">
             <h2>欢迎注册</h2>
           </div>
@@ -33,12 +33,16 @@
             <!-- 账号 -->
             <div class="row mb-4 form-group">
               <span class="iconfont icon-yonghu"></span>
-              <input type="text" class="form-control" name="username" />
+              <input autocomplete="off" type="text" class="form-control" name="username" />
+              <!-- 校验提示框 -->
+              <span class="tip1"></span>
             </div>
             <!-- 密码 -->
             <div class="row mb-4 form-group">
               <span class="iconfont icon-mima"></span>
-              <input type="password" class="form-control" name="password" />
+              <input autocomplete="off" type="password" class="form-control" name="password" />
+              <!-- 校验提示框 -->
+              <span class="tip2"></span>
             </div>
             <div class="row mb-4">
               <button type="submit" class="btn btn-primary">注册</button>
@@ -57,12 +61,16 @@
             <!-- 账号 -->
             <div class="row mb-4 form-group">
               <span class="iconfont icon-yonghu"></span>
-              <input type="text" class="form-control" name="username" />
+              <input autocomplete="off" type="text" class="form-control" name="username" />
+              <!-- 校验提示框 -->
+              <span class="tip1"></span>
             </div>
             <!-- 密码 -->
             <div class="row mb-4 form-group">
               <span class="iconfont icon-mima"></span>
-              <input type="password" class="form-control" name="password" />
+              <input autocomplete="off" type="password" class="form-control" name="password" />
+              <!-- 校验提示框 -->
+              <span class="tip2"></span>
             </div>
             <div class="row mb-4">
               <button type="submit" class="btn btn-primary">登录</button>
@@ -83,6 +91,10 @@
   <script src="./assets/lib/validator/bootstrapValidator.min.js"></script>
   <script src="./assets/lib/axios.js"></script>
   <script src="./assets/utils/toastr.js"></script>
+  <!-- 公共JS文件，要导入在自身的JS文件之前 -->
+  <script src="./assets/js/common.js"></script>
+  <!-- 引入本页面的JS文件 -->
+  <script src="./assets/js/login.js"></script>
 
 </body>
 
