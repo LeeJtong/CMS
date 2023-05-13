@@ -74,6 +74,8 @@
         </div>
       </div>
       <div class="content">
+        <!-- iframe标签：可以实现一个页面里面包含另一个页面 -->
+        <!-- iframe的name值和a链接的target值要一致，这样当a链接点击的时候就会在iframe标签显示 -->
         <iframe src="./dashboard.html" name="fm" frameborder="0"></iframe>
       </div>
     </div>
@@ -84,6 +86,9 @@
   <script src="./assets/lib/axios.js"></script>
   <script src="./assets/utils/toastr.js"></script>
 
+  <!-- 引入全局JS文件 -->
+  <script src="./assets/js/common.js"></script>
+  <!-- 引入自己页面的JS文件 -->
   <script src="./assets/js/index.js"></script>
 </body>
 
